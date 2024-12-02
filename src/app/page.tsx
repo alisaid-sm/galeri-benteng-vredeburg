@@ -21,20 +21,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="flex justify-center w-full fixed bottom-5">
-        <button
-          type="button"
-          className="text-white bg-[#D46C4F] hover:bg-[#D46C4F] font-medium rounded-lg text-sm me-2 w-28 h-8"
-        >
-          Tentang Kami
-        </button>
-        <button
-          type="button"
-          className="text-[#D46C4F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#D46C4F]"
-        >
-          Galeri
-        </button>
-      </div>
     </main>
   );
 }
