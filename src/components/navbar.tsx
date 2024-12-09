@@ -14,7 +14,7 @@ export default function Navbar() {
       <Link href="/">
         <button
           type="button"
-          className={`${pathname === "/" ? active : inactive}`}
+          className={`${pathname === "/" ? "btn-active" : "btn-inactive"}`}
         >
           Tentang Kami
         </button>
@@ -22,7 +22,7 @@ export default function Navbar() {
       <Link href="/galeri">
         <button
           type="button"
-          className={`${pathname === "/galeri" ? active : inactive}`}
+          className={`${pathname === "/galeri" ? "btn-active" : "btn-inactive"}`}
         >
           Galeri
         </button>

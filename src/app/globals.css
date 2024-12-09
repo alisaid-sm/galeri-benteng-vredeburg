@@ -22,3 +22,23 @@ body {
   background-size: 100%;
   background-position: 0% 20%;
 }
+
+.btn-active {
+  @apply text-white bg-[#D46C4F] hover:bg-[#D46C4F] font-medium rounded-lg text-sm me-2 w-28 h-8
+}
+
+.btn-inactive {
+  @apply text-[#D46C4F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#D46C4F]
+}
+
+.btn-2-active {
+  @apply text-white bg-[#77706F] hover:bg-[#77706F] font-medium rounded-lg text-sm me-2 w-28 h-8
+}
+
+.btn-2-inactive {
+  @apply text-[#77706F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#77706F]
+}
+
+.card {
+  @apply bg-white text-white flex justify-center items-center rounded-md h-52 drop-shadow-xl relative
+}
