@@ -1,15 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const params = useParams();
 
-  const active = "text-white bg-[#D46C4F] hover:bg-[#D46C4F] font-medium rounded-lg text-sm me-2 w-28 h-8";
-  const inactive = "text-[#D46C4F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#D46C4F]";
-
-  return (
+  return pathname === `/galeri/${params?.id}` ? (
+    <div className="flex justify-center w-full fixed bottom-5">
+      <Link href="/galeri">
+        <button
+          type="button"
+          className="btn-active"
+        >
+          Kembali
+        </button>
+      </Link>
+    </div>
+  ) : (
     <div className="flex justify-center w-full fixed bottom-5">
       <Link href="/">
         <button
@@ -22,7 +31,9 @@ export default function Navbar() {
       <Link href="/galeri">
         <button
           type="button"
-          className={`${pathname === "/galeri" ? "btn-active" : "btn-inactive"}`}
+          className={`${
+            pathname === "/galeri" ? "btn-active" : "btn-inactive"
+          }`}
         >
           Galeri
         </button>
