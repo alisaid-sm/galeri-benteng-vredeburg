@@ -42,3 +42,7 @@ body {
 .card {
   @apply bg-white text-white flex justify-center items-center rounded-md h-52 drop-shadow-xl relative
 }
+
+.overlay-bg {
+  background: rgba(217, 217, 217, 0.44);
+}
