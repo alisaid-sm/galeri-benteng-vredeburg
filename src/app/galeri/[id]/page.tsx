@@ -5,12 +5,15 @@ export default async function Page({
 }) {
   const id = (await params).id;
   return (
-    <div className={`h-screen bg-[url('/img/${id}')] bg-center bg-cover`}>
-      <div className="overlay-bg">
-        <h1 className="text-center">My Post: {id}</h1>
+    <div className="relative">
+      <div
+        className={`h-screen bg-[url('/img/${id}')] bg-center bg-cover brightness-50`}
+      ></div>
+      <div className="overlay-bg absolute top-10 w-52 left-1/2 translate-x-[-50%]">
+        <h1 className="text-center m-auto p-5">My Post: {id}</h1>
       </div>
-      <div className="overlay-bg">
-        <p className="text-center">
+      <div className="overlay-bg absolute bottom-56 left-1/2 translate-x-[-50%] w-3/4">
+        <p className="text-center m-auto p-5">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industrys standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
