@@ -7,7 +7,8 @@ export default async function Page({
   return (
     <div className="relative">
       <div
-        className={`h-screen bg-[url('/img/${id}')] bg-center bg-cover brightness-50`}
+        className={`h-screen brightness-50`}
+        style={{backgroundImage: `url('/img/${id}')`, backgroundSize: "cover"}}
       ></div>
       <div className="overlay-bg absolute top-10 w-52 left-1/2 translate-x-[-50%]">
         <h1 className="text-center m-auto p-5">My Post: {id}</h1>
