@@ -1,29 +1,31 @@
+import arrayOfFoto, { TArrayOfFoto } from "@/data/foto";
+
 export default async function Page({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
-  const id = (await params).id;
+  const arrayOfFotos : TArrayOfFoto[] = arrayOfFoto;
+  let id = (await params).id;
+
+  if (Number(id) > arrayOfFotos.length) {
+    id = String(arrayOfFotos.length);
+  }
+
+  const foto = arrayOfFotos.filter(obj => obj.id === Number(id))[0];
+
   return (
     <div className="relative">
       <div
         className={`h-screen brightness-50`}
-        style={{backgroundImage: `url('/img/${id}')`, backgroundSize: "cover"}}
+        style={{backgroundImage: `url('/img/${foto.image}')`, backgroundSize: "cover"}}
       ></div>
       <div className="overlay-bg absolute top-10 w-52 left-1/2 translate-x-[-50%]">
-        <h1 className="text-center m-auto p-5">My Post: {id}</h1>
+        <h1 className="text-center m-auto p-5">{foto.name}</h1>
       </div>
       <div className="overlay-bg absolute bottom-56 left-1/2 translate-x-[-50%] w-3/4">
         <p className="text-center m-auto p-5">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          {foto.description}
         </p>
       </div>
     </div>

@@ -10,7 +10,7 @@ export default function Galeri() {
         {arrayOfFotos.map((obj) => (
           <div key={obj.id} className={`card bg-center`} style={{background: `url('/img/${obj.image}')`}}>
             <span className="absolute top-3">{obj.name}</span>
-            <Link href={`/galeri/${obj.image}`}>
+            <Link href={`/galeri/${obj.id}`}>
               <button
                 type="button"
                 className="btn-2-active absolute bottom-3 left-1/2 translate-x-[-50%]"
