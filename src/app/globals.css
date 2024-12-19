@@ -19,24 +19,24 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-image: url('/img/mainbg.svg');
-  background-size: 100%;
+  background-size: cover;
   background-position: 0% 20%;
 }
 
 .btn-active {
-  @apply text-white bg-[#D46C4F] hover:bg-[#D46C4F] font-medium rounded-lg text-sm me-2 w-28 h-8
+  @apply text-white bg-[#D46C4F] hover:bg-[#D46C4F] font-medium rounded-lg text-xs md:text-sm me-2 w-16 md:w-28 h-8
 }
 
 .btn-inactive {
-  @apply text-[#D46C4F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#D46C4F]
+  @apply text-[#D46C4F] bg-white hover:bg-white font-medium rounded-lg text-xs md:text-sm me-2 w-16 md:w-28 h-8 border-2 border-[#D46C4F]
 }
 
 .btn-2-active {
-  @apply text-white bg-[#77706F] hover:bg-[#77706F] font-medium rounded-lg text-sm me-2 w-28 h-8
+  @apply text-white bg-[#77706F] hover:bg-[#77706F] font-medium rounded-lg text-xs md:text-sm me-2 w-16 md:w-28 h-8
 }
 
 .btn-2-inactive {
-  @apply text-[#77706F] bg-white hover:bg-white font-medium rounded-lg text-sm me-2 w-28 h-8 border-2 border-[#77706F]
+  @apply text-[#77706F] bg-white hover:bg-white font-medium rounded-lg text-xs md:text-sm me-2 w-16 md:w-28 h-8 border-2 border-[#77706F]
 }
 
 .card {

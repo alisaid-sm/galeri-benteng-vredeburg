@@ -3,16 +3,16 @@ export default function Kunjungan() {
     <main>
       <div className="flex flex-col h-screen">
         <div className="flex justify-center pt-6 pb-8">
-          <span className="text-4xl">Kunjungan</span>
+          <span className="text-xl md:text-4xl">Kunjungan</span>
         </div>
-        <div className="flex justify-center items-center flex-grow flex-col">
-          <div className="px-8 drop-shadow-lg shadow-black text-center text-lg">
+        <div className="flex justify-center items-center flex-grow flex-col text-sm md:text-lg">
+          <div className="px-8 drop-shadow-lg shadow-black text-center">
             <h1 className="font-bold">WAKTU KUNJUNGAN</h1>
             <p>Senin-Kamis : 08:00-20:00 WIB</p>
             <p>Jumat-Minggu : 08:00-22:00 WIB</p>
             <p>MUSEUM BUKA SETIAP HARI</p>
           </div>
-          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center text-lg">
+          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center">
             <h1 className="font-bold">TIKET KUNJUNGAN</h1>
             <p>Senin-Kamis 08.00-20.00 WIB</p>
             <p>Anak-Anak Rp.10.000</p>

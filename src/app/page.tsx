@@ -3,10 +3,10 @@ export default function Home() {
     <main>
       <div className="flex flex-col h-screen">
         <div className="flex justify-center pt-6">
-          <span className="text-4xl">Museum Benteng Vredeburg</span>
+          <span className="text-xl md:text-4xl">Museum Benteng Vredeburg</span>
         </div>
-        <div className="flex justify-center items-center flex-grow flex-col">
-          <div className="px-8 drop-shadow-lg shadow-black text-center text-lg">
+        <div className="flex justify-center items-center flex-grow flex-col text-sm md:text-lg">
+          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center">
             <p>
               Museum Benteng Vredeburg, yang terletak di Yogyakarta, merupakan
               salah satu museum bersejarah yang menyimpan banyak informasi
@@ -17,7 +17,7 @@ export default function Home() {
               muda.
             </p>
           </div>
-          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center text-lg">
+          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center">
             <h1 className="font-bold">PROFIL</h1>
             <p>
               Letak Benteng Vredeburg Yogyakarta di kawasan nol kilometer pusat
@@ -38,7 +38,7 @@ export default function Home() {
               Yogyakarta telah melekat dengan Kota Yogyakarta.
             </p>
           </div>
-          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center text-lg">
+          <div className="px-8 pt-8 drop-shadow-lg shadow-black text-center">
             <h1 className="font-bold">SEJARAH</h1>
             <p>
               Museum vredeburg merupakan wisata edukasi dimana kita dapat
