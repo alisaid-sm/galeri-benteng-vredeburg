@@ -17,7 +17,7 @@ export default function Navbar() {
       </button>
     </div>
   ) : (
-    <div className="flex justify-center w-full fixed bottom-5">
+    <div className="flex justify-center items-center w-full fixed bottom-5">
       <Link href="/">
         <button
           type="button"
